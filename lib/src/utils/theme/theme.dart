@@ -42,7 +42,6 @@ class MyAppTheme {
       /// Surface Colors (Background Layers)
       surface: Colors.white, // main background color
       onSurface: Colors.black, // text/icons on surface
-
       surfaceContainerLowest: Color(0xFFFFFFFF), // lowest background layer
       surfaceContainerLow: Color(0xFFF7F7F7), // low elevation surface
       surfaceContainer: Color(0xFFF2F2F2), // default container surface
