@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:theme_management1/src/utils/theme/theme.dart';
 import 'screens/home_page.dart';
 
 void main() => runApp(const App());
@@ -11,8 +12,8 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
-      theme: ThemeData.light(),
-      darkTheme: ThemeData.dark(),
+      theme: MyAppTheme.kLightTheme,
+      darkTheme: MyAppTheme.kDarkTheme,
       themeMode: ThemeMode.system,
       home: const HomePage(),
     );
