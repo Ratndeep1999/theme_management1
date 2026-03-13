@@ -50,4 +50,27 @@ class AppColors {
   static const Color kInverseSurface = Color(0xFF313033);
   static const Color kOnInverseSurface = Color(0xFFF4EFF4);
   static const Color kInversePrimary = Color(0xFFD0BCFF);
+
+  /// This is Custom Colors If Needs
+
+  /// Status Colors
+  static const Color kSuccess = Color(0xFF2E7D32);
+  static const Color kWarning = Color(0xFFF9A825);
+  static const Color kInfo = Color(0xFF0288D1);
+
+  /// Gradient Colors
+  static const Gradient kPrimaryGradient = LinearGradient(
+    colors: [Color(0xFF1976D2), Color(0xFF42A5F5)],
+    begin: Alignment.topLeft,
+    end: Alignment.bottomRight,
+  );
+
+  /// Chart Colors
+  static const List<Color> kChartColors = [
+    Color(0xFF1976D2),
+    Color(0xFF2E7D32),
+    Color(0xFFF9A825),
+    Color(0xFF6A1B9A),
+    Color(0xFFD32F2F),
+  ];
 }
