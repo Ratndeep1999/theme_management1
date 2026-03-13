@@ -9,12 +9,12 @@ class MyAppTheme {
   /// Light Theme
   static final ThemeData kLightTheme = ThemeData(
     brightness: Brightness.light,
-    textTheme: AppTextTheme.lightTextTheme,
+    textTheme: AppTextTheme.kLightTextTheme,
   );
 
   /// Dark Theme
   static final ThemeData kDarkTheme = ThemeData(
     brightness: Brightness.dark,
-    textTheme: AppTextTheme.darkTextTheme,
+    textTheme: AppTextTheme.kDarkTextTheme,
   );
 }
