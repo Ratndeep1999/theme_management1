@@ -1,37 +1,33 @@
 import 'package:flutter/material.dart';
+import 'package:theme_management1/src/utils/theme/text_styles.dart';
 
 class AppTextTheme {
   /// Private constructor
   AppTextTheme._();
 
   /// Light Text Theme
-  static const TextTheme lightTextTheme = TextTheme(
-    /// Display (very large headings)
-    displayLarge: TextStyle(fontSize: 57, fontWeight: FontWeight.bold),
-    displayMedium: TextStyle(fontSize: 45, fontWeight: FontWeight.bold),
-    displaySmall: TextStyle(fontSize: 36, fontWeight: FontWeight.bold),
+  static TextTheme kLightTextTheme = TextTheme(
+    displayLarge: TextStyles.kBoldDisplay57w700,
+    displayMedium: TextStyles.kBoldDisplay45w700,
+    displaySmall: TextStyles.kBoldDisplay36w700,
 
-    /// Headlines (section headings)
-    headlineLarge: TextStyle(fontSize: 32, fontWeight: FontWeight.w700),
-    headlineMedium: TextStyle(fontSize: 28, fontWeight: FontWeight.w600),
-    headlineSmall: TextStyle(fontSize: 24, fontWeight: FontWeight.w600),
+    headlineLarge: TextStyles.kBoldHeadline32w700,
+    headlineMedium: TextStyles.kSemiBoldHeadline28w600,
+    headlineSmall: TextStyles.kSemiBoldHeadline24w600,
 
-    /// Titles (AppBar / Card titles)
-    titleLarge: TextStyle(fontSize: 22, fontWeight: FontWeight.w600),
-    titleMedium: TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
-    titleSmall: TextStyle(fontSize: 14, fontWeight: FontWeight.w500),
+    titleLarge: TextStyles.kSemiBoldTitle22w600,
+    titleMedium: TextStyles.kMediumTitle16w500,
+    titleSmall: TextStyles.kMediumTitle14w500,
 
-    /// Body text
-    bodyLarge: TextStyle(fontSize: 16, fontWeight: FontWeight.w400),
-    bodyMedium: TextStyle(fontSize: 14, fontWeight: FontWeight.w400),
-    bodySmall: TextStyle(fontSize: 12, fontWeight: FontWeight.w400),
+    bodyLarge: TextStyles.kRegularBody16w400,
+    bodyMedium: TextStyles.kRegularBody14w400,
+    bodySmall: TextStyles.kRegularBody12w400,
 
-    /// Labels (buttons / captions)
-    labelLarge: TextStyle(fontSize: 14, fontWeight: FontWeight.w500),
-    labelMedium: TextStyle(fontSize: 12, fontWeight: FontWeight.w500),
-    labelSmall: TextStyle(fontSize: 11, fontWeight: FontWeight.w500),
+    labelLarge: TextStyles.kMediumLabel14w500,
+    labelMedium: TextStyles.kMediumLabel12w500,
+    labelSmall: TextStyles.kMediumLabel11w500,
   );
 
   /// Dark Text Theme
-  static const TextTheme darkTextTheme = lightTextTheme;
+  static final TextTheme kDarkTextTheme = kLightTextTheme;
 }
